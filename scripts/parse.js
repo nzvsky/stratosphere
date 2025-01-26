@@ -4,13 +4,20 @@ const params = new URLSearchParams(src.search);
 const fileName = params.get('file');
 const filePath = `../json/${fileName}`;
 
+const cdn = "https://nzvsky-cdn.github.io/";
+
+const assets = cdn + "assets/";
+const covers = assets + "covers/";
+const utilcdn = cdn + "utilities/"
+const cdn1 = cdn + "games-1/"
+
 function parse(json) {
     fetch(filePath)
         .then((response) => response.json())
         .then((data) => {
             json(data);
         });
-}
+};
 
 parse((data) => {
     data.forEach((game) => {
@@ -24,7 +31,7 @@ parse((data) => {
         coverImage.setAttribute("id", "cardCoverImage");
         gameName.setAttribute("id", "cardGameName");
 
-        coverImage.src = game.image;
+        coverImage.src = covers + game.image;
         coverImage.draggable = false;
         gameName.textContent = game.name;
         gameName.style.fontSize = game.fontsize + "px";
@@ -38,12 +45,21 @@ parse((data) => {
                 const tab = window.open("about:blank", "_blank");
                 const iframe = tab.document.createElement("iframe");
 
+                const path = game.path;
+                let url = null;
+
+                if (game.cdn === 1) {
+                    url = cdn1 + path;
+                } else if (game.cdn === "utils") {
+                    url = utilcdn + path;
+                };
+
                 tab.document.body.style.backgroundColor = "transparent";
                 tab.document.body.style.margin = 0;
                 tab.document.body.style.padding = 0;
                 tab.document.body.style.overflow = "hidden";
                 
-                iframe.src = game.url;
+                iframe.src = url;
                 iframe.allowFullscreen = true;
                 iframe.style.width = "100%";
                 iframe.style.height = "100%";

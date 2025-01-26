@@ -2,8 +2,9 @@
     {
         "name": "WiFi Password Extractor",
         "fontsize": 20,
-        "image": "https://nzvsky-cdn.github.io/assets/covers/wifi.png",
-        "url": "https://nzvsky-cdn.github.io/utilities/wifi-password/",
+        "image": "wifi.png",
+        "path": "wifi-password",
+        "cdn": "utils",
         "embed": true
     }
 ]

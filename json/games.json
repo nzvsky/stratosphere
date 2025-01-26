@@ -2,8 +2,9 @@
     {
         "name": "Minecraft",
         "fontsize": 22,
-        "image": "https://nzvsky-cdn.github.io/assets/covers/minecraft.png",
-        "url": "https://nzvsky-cdn.github.io/games-1/eaglercraft/",
+        "image": "minecraft.png",
+        "path": "eaglercraft",
+        "cdn": 1,
         "embed": true
     }
 ]
