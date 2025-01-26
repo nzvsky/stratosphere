@@ -1,18 +1,122 @@
 [
     {
+        "name": "Papa's Bakeria",
+        "fontsize": 18,
+        "image": "papasbakeria.jpg",
+        "path": "${cdn1}papas/bakeria.swf",
+        "cdn": "ruffle",
+        "embed": true
+    },
+    {
+        "name": "Papa's Burgeria",
+        "fontsize": 18,
+        "image": "papasburgeria.jpg",
+        "path": "${cdn1}papas/burgeria.swf",
+        "cdn": "ruffle",
+        "embed": true
+    },
+    {
+        "name": "Papa's Cheeseria",
+        "fontsize": 18,
+        "image": "papascheeseria.jpg",
+        "path": "${cdn1}papas/cheeseria.swf",
+        "cdn": "ruffle",
+        "embed": true
+    },
+    {
+        "name": "Papa's Cupcakeria",
+        "fontsize": 18,
+        "image": "papascupcakeria.jpg",
+        "path": "${cdn1}papas/cupcakeria.swf",
+        "cdn": "ruffle",
+        "embed": true
+    },
+    {
+        "name": "Papa's Donuteria",
+        "fontsize": 18,
+        "image": "papasdonuteria.jpg",
+        "path": "${cdn1}papas/donuteria.swf",
+        "cdn": "ruffle",
+        "embed": true
+    },
+    {
+        "name": "Papa's Freezeria",
+        "fontsize": 18,
+        "image": "papasfreezeria.jpg",
+        "path": "${cdn1}papas/freezeria.swf",
+        "cdn": "ruffle",
+        "embed": true
+    },
+    {
+        "name": "Papa's Hot Doggeria",
+        "fontsize": 18,
+        "image": "papashotdoggeria.jpg",
+        "path": "${cdn1}papas/hotdoggeria.swf",
+        "cdn": "ruffle",
+        "embed": true
+    },
+    {
+        "name": "Papa's Pancakeria",
+        "fontsize": 18,
+        "image": "papaspancakeria.jpg",
+        "path": "${cdn1}papas/pancakeria.swf",
+        "cdn": "ruffle",
+        "embed": true
+    },
+    {
+        "name": "Papa's Pastaria",
+        "fontsize": 18,
+        "image": "papaspastaria.jpg",
+        "path": "${cdn1}papas/pastaria.swf",
+        "cdn": "ruffle",
+        "embed": true
+    },
+    {
+        "name": "Papa's Pizzeria",
+        "fontsize": 18,
+        "image": "papaspizzeria.jpg",
+        "path": "${cdn1}papas/pizzeria.swf",
+        "cdn": "ruffle",
+        "embed": true
+    },
+    {
+        "name": "Papa's Scooperia",
+        "fontsize": 18,
+        "image": "papasscooperia.jpg",
+        "path": "${cdn1}papas/scooperia.swf",
+        "cdn": "ruffle",
+        "embed": true
+    },
+    {
+        "name": "Papa's Sushiria",
+        "fontsize": 18,
+        "image": "papassushiria.jpg",
+        "path": "${cdn1}papas/sushiria.swf",
+        "cdn": "ruffle",
+        "embed": true
+    },
+    {
+        "name": "Papa's Taco Mia",
+        "fontsize": 18,
+        "image": "papastacomia.jpg",
+        "path": "${cdn1}papas/tacomia.swf",
+        "cdn": "ruffle",
+        "embed": true
+    },
+    {
+        "name": "Papa's Wingeria",
+        "fontsize": 18,
+        "image": "papaswingeria.jpg",
+        "path": "${cdn1}papas/wingeria.swf",
+        "cdn": "ruffle",
+        "embed": true
+    },
+    {
         "name": "Minecraft",
         "fontsize": 22,
         "image": "minecraft.png",
         "path": "eaglercraft",
         "cdn": 1,
-        "embed": true
-    },
-    {
-        "name": "Papa's Bakeria",
-        "fontsize": 20,
-        "image": "papasbakeria.jpg",
-        "path": "${cdn1}papas/bakeria.swf",
-        "cdn": "ruffle",
         "embed": true
     }
 ]
