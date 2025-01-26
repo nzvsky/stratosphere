@@ -96,7 +96,7 @@
         "embed": true
     },
     {
-        "name": "Papa's Taco Mia",
+        "name": "Papa's Taco Mia!",
         "fontsize": 18,
         "image": "papastacomia.jpg",
         "path": "${cdn1}papas/tacomia.swf",
