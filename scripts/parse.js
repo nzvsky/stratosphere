@@ -45,8 +45,10 @@ parse((data) => {
                 const tab = window.open("about:blank", "_blank");
                 const iframe = tab.document.createElement("iframe");
 
-                const path = game.path;
+                let path = game.path;
                 let url = null;
+
+                path = path.replace("${cdn1}", cdn1);
 
                 if (game.cdn === 1) {
                     url = cdn1 + path;
