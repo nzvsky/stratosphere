@@ -6,5 +6,13 @@
         "path": "eaglercraft",
         "cdn": 1,
         "embed": true
+    },
+    {
+        "name": "Papa's Bakeria",
+        "fontsize": 20,
+        "image": "papasbakeria.jpg",
+        "path": "ruffle?swf=${cdn1}papas/bakeria.swf",
+        "cdn": 1,
+        "embed": true
     }
 ]
