@@ -11,8 +11,8 @@
         "name": "Papa's Bakeria",
         "fontsize": 20,
         "image": "papasbakeria.jpg",
-        "path": "ruffle?swf=${cdn1}papas/bakeria.swf",
-        "cdn": 1,
+        "path": "${cdn1}papas/bakeria.swf",
+        "cdn": "ruffle",
         "embed": true
     }
 ]

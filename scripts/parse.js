@@ -7,6 +7,7 @@ const filePath = `../json/${fileName}`;
 const cdn = "https://nzvsky-cdn.github.io/";
 
 const assets = cdn + "assets/";
+const ruffle = cdn + "ruffle/?swf="
 const covers = assets + "covers/";
 const utilcdn = cdn + "utilities/"
 const cdn1 = cdn + "games-1/"
@@ -54,7 +55,9 @@ parse((data) => {
                     url = cdn1 + path;
                 } else if (game.cdn === "utils") {
                     url = utilcdn + path;
-                };
+                } else if (game.cdn === "ruffle") {
+                    url = ruffle + path
+                }
 
                 tab.document.body.style.backgroundColor = "transparent";
                 tab.document.body.style.margin = 0;
