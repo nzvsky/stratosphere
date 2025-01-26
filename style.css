@@ -1,0 +1,121 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    color: white;
+    background: url('/assets/background.gif') no-repeat center center;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding-top: 75px;
+}
+
+#navbar {
+    background-color: rgba(50, 50, 50, 0.5);
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar-item {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+#navbar-item.current {
+    color: grey;
+    font-style: italic;
+}
+
+#page-title {
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
+    margin-top: 0;
+    padding-top: 50px;
+}
+
+#search {
+    background-color: rgba(50, 50, 50, 0.5);
+    backdrop-filter: blur(5px);
+    color: white;
+    width: 30%;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0 15px;
+    overflow: visible;
+    display: block;
+    border: none;
+    outline: none;
+    margin: 0 auto;
+    transition: transform .15s ease-in-out;
+}
+
+#search:hover {
+    outline: 1px solid grey;
+}
+
+#search:focus {
+    outline: 1px solid grey;
+    transform: scale(1.05);
+}
+
+#games {
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+#gameCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 250px;
+    border-radius: 15px;
+    background-color: rgba(50, 50, 50, 0.5);
+    backdrop-filter: blur(5px);
+    transition: ease-in-out .15s;
+}
+
+#gameCard:hover {
+    cursor: pointer;
+    outline: 1px solid grey;
+    transform: scale(1.03);
+}
+
+#cardCoverImage {
+    object-fit: cover;
+    width: 170px;
+    margin-top: 17px;
+    border-radius: 15px;
+}
+
+#cardGameName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 30px;
+    margin-top: 16px;
+    padding: 0 10px;
+}
