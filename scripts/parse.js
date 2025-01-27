@@ -6,9 +6,7 @@ const filePath = `../json/${fileName}`;
 
 const cdn = "https://nzvsky-cdn.github.io/";
 
-const assets = cdn + "assets/";
 const ruffle = cdn + "ruffle/?swf="
-const covers = assets + "covers/";
 const utilcdn = cdn + "utilities/"
 const cdn1 = cdn + "games-1/"
 
@@ -32,7 +30,7 @@ parse((data) => {
         coverImage.setAttribute("id", "cardCoverImage");
         gameName.setAttribute("id", "cardGameName");
 
-        coverImage.src = covers + game.image;
+        coverImage.src = "../assets/covers/" + game.image;
         coverImage.draggable = false;
         gameName.textContent = game.name;
         gameName.style.fontSize = game.fontsize + "px";
