@@ -117,6 +117,6 @@
         "image": "minecraft.png",
         "path": "eaglercraft",
         "cdn": 1,
-        "embed": true
+        "embed": false
     }
 ]
