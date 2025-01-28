@@ -6,9 +6,9 @@ const filePath = `../json/${fileName}`;
 
 const cdn = "https://nzvsky-cdn.github.io/";
 
-const ruffle = cdn + "ruffle/?swf="
-const utilcdn = cdn + "utilities/"
-const cdn1 = cdn + "games-1/"
+const ruffle = cdn + "ruffle/?swf=";
+const utilcdn = cdn + "utilities/";
+const cdn1 = cdn + "games-1/";
 
 function parse(json) {
     fetch(filePath)
@@ -26,6 +26,8 @@ parse((data) => {
         const coverImage = document.createElement("img");
         const gameName = document.createElement("p");
 
+        const embedGame = game.embed
+
         div.setAttribute("id", "gameCard");;
         coverImage.setAttribute("id", "cardCoverImage");
         gameName.setAttribute("id", "cardGameName");
@@ -40,22 +42,22 @@ parse((data) => {
         games.appendChild(div);
 
         div.addEventListener("click", () => {
-            if (game.embed) {
+            let path = game.path;
+            let url = null;
+
+            path = path.replace("${cdn1}", cdn1);
+
+            if (game.cdn === 1) {
+                url = cdn1 + path;
+            } else if (game.cdn === "utils") {
+                url = utilcdn + path;
+            } else if (game.cdn === "ruffle") {
+                url = ruffle + path;
+            }
+
+            if (embedGame) {
                 const tab = window.open("about:blank", "_blank");
                 const iframe = tab.document.createElement("iframe");
-
-                let path = game.path;
-                let url = null;
-
-                path = path.replace("${cdn1}", cdn1);
-
-                if (game.cdn === 1) {
-                    url = cdn1 + path;
-                } else if (game.cdn === "utils") {
-                    url = utilcdn + path;
-                } else if (game.cdn === "ruffle") {
-                    url = ruffle + path
-                }
 
                 tab.document.body.style.backgroundColor = "transparent";
                 tab.document.body.style.margin = 0;
@@ -70,7 +72,7 @@ parse((data) => {
 
                 tab.document.body.appendChild(iframe);
             } else {
-                window.open(game.url, "_blank");
+                window.open(url, "_blank");
             };
         });
     });
