@@ -72,7 +72,19 @@ parse((data) => {
 
                 tab.document.body.appendChild(iframe);
             } else {
-                window.open(url, "_blank");
+                const tab = window.open(url, "_blank");
+                
+                tab.addEventListener("load", () => {
+                    const script = document.createElement("script");
+
+                    script.textContent = `
+                    document.addEventListener("DOMContentLoaded", () => {
+                        document.name = "Hi";
+                    });
+                    `;
+
+                    tab.document.body.appendChild(script);
+                });
             };
         });
     });
